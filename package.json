@@ -1,0 +1,14 @@
+{
+  "name": "bornas",
+  "version": "1.0.0",
+  "description": "bornas landing page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.63.3"
+  }
+}
