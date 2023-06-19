@@ -1,7 +1,7 @@
 {
-  "name": "bornas",
+  "name": "gulp_start",
   "version": "1.0.0",
-  "description": "bornas landing page",
+  "description": "starter for gulp",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,6 +9,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.63.3"
+    "browser-sync": "^2.29.3",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^2.3.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.63.4"
   }
 }
