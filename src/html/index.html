@@ -10,12 +10,15 @@
     <title>Bornas</title>
 </head>
 <body>
-    @@include('./components/header.html',{})
-    <main>
-        Main
-    </main>
+    <div class="layout">
+        @@include('./components/header.html',{})
+        <main class="layout__main">
+           
+        </main>
+       
+        @@include('./components/footer.html',{})
+    </div>
    
-    @@include('./components/footer.html',{})
    <script src="js/index.min.js"></script>
 </body>
 </html>

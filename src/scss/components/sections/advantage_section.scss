@@ -1,0 +1,11 @@
+.advantage-section {
+    &__container {
+        padding-top: 192px;
+        display: flex;
+        justify-content: space-between;
+        column-gap: 30px;
+    }
+    &__title {
+        max-width: 485px;
+    }
+}

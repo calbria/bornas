@@ -23,7 +23,7 @@ function styles() {
     return src( 'src/scss/app.scss', { sourcemaps: true })
     .pipe(concat('app.min.css'))
     .pipe(scss({outputStyle: 'compressed'}))
-    //  .pipe(autoprefixer()) 
+    .pipe(autoprefixer()) 
     .pipe(dest('./src/css', { sourcemaps: true }))
     .pipe(browserSync.stream());
 }
@@ -82,18 +82,3 @@ exports.build = series(cleanDist, builder);//dist folder must exist before runni
 
 exports.default = parallel(html, styles, scripts, browsersync, watcher);
 
-// package.json
-/* 
- "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-*/
