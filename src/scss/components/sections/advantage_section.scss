@@ -4,8 +4,26 @@
         display: flex;
         justify-content: space-between;
         column-gap: 30px;
+        color: $primary-text;
     }
     &__title {
-        max-width: 485px;
+        max-width: 425px;
+       
+    }
+    &__table {
+        max-width: 588px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+        row-gap: 64px;
+    }
+    &__item-title {
+        margin-bottom: 16px;
+    }
+    &__item-text {
+        color: $secondary-text;
+    }
+    &__image {
+        grid-column: 1 / 3;
     }
 }

@@ -65,7 +65,8 @@ function builder() {
     return src ([
         './src/css/app.min.css',
         './src/js/index.min.js',
-        './src/*.html'
+        './src/*.html',
+        './src/images/**/*.*'
     ], {base: 'src'})
     .pipe(dest('./dist'))
 }
