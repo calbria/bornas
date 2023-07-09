@@ -1,9 +1,10 @@
 .details-section {
+   
     &__container {
         padding-top: 192px;
         display: flex;
         flex-direction: column;
-        row-gap: 47px;
+        row-gap: 50px;
     }
     &__text {
         display: grid;
@@ -20,6 +21,165 @@
     }
     &__paragraph {
         color: $secondary-text;
+        margin-bottom: 40px;
     }
+    &__toggle {
+
+    }
+    &__description {
+        position: relative;
+    }
+   
+    
+}
+
+
+
+.toggle {
+    border: thin solid $grey;
+    border-radius: calc($btn-radius + 1px);
+    display: flex;
+    width: fit-content;
+    &__button {
+        display: inline-block;
+        padding-left: $wide-btn;
+        padding-right: $wide-btn;
+        min-width: 178px;
+        
+    }
+    .active {
+        background-color: $black;
+        color: $white-text;
+    }
+}
+
+@keyframes move {
+    0% {
+        stroke-dashoffset: -157;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+
+}
+
+@keyframes remove {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: -157;
+    }
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes hide {
+    0% {
+        opacity: 1;
+    }
+   
+    100% {
+        opacity: 0;
+    }
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 0.5s ease-in;
+ }
+ .description-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: 5px;
+    width: fit-content;
+    padding: 20px;
+    position: absolute;
+    
+}
+.description-left {
+    flex-direction: column-reverse;
+    left: 120px;
+    top: -24px;
+}
+
+.description-right {
+    flex-direction: column;
+    left: 800px;
+    top: 80px;
+}
+.info {
+    display: flex;
+    column-gap: 24px;
+}
+.description-right .info {
+    flex-direction: row-reverse;
+}
+
+.info .text {
+    color: #1E0D0A;
+    display: inline-block;
+    opacity: 0;
+}
+.description-right .text {
+    align-self: flex-end;
+}
+
+.line {
+    width: 120px;
+    height: 50px;
+    
+}
+.description-right .line {
+    width: 70px;
+    height: 80px;
+}
+.poly {
+    stroke: $grey;
+    stroke-width: 2px;
+    stroke-dasharray: 157;
+    stroke-dashoffset: -157;
+    fill: none;
+}
+.point {
+    fill: $grey;
+   opacity: 0;
+}
+
+.plus-icon {
+    width: 36px;
+    height: 40px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    
+}
+
+.description-left .plus-icon {
+    left: 100%;
+    transform: translateX(-60%);
+}
+.description-right .plus-icon {
+    left: 0;
+    transform: translateX(-45%);
+}
+
+.outer-circle {
+    fill: white;
+   
+}
+.inner-circle {
+    stroke: #1E0D0A;
+    
+}
+.plus {
+    fill: #1E0D0A;
     
 }

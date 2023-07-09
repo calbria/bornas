@@ -8,6 +8,7 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    column-gap: 30px;
   }
 
   
@@ -15,6 +16,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-shrink: 0;
   }
   &__logo {
     
@@ -27,6 +29,7 @@
     display: flex;
     flex-direction: column;
     gap: 27px;
+    flex-shrink: 0;
   }
 
   &__menu-link {
@@ -60,7 +63,9 @@
     align-items: center;
     border: 1px solid $white;
     
-    border-radius: 23px;
+    border-radius: $btn-radius;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
   }
   &__input {
     padding: 0 32px;
@@ -77,9 +82,8 @@
   &__btn {
     background-color: $white;
     color: $primary-text;
-    text-transform: uppercase;
-    padding: 15px 47px;
-    border-top-right-radius: 23px;
-    border-bottom-right-radius: 23px;
+    border: 1px solid $white;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 }

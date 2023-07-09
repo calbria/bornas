@@ -7,6 +7,15 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        column-gap: 30px;
+    }
+    &__logo {
+        flex-shrink: 0;
+    }
+}
+.nav {
+    &__cart {
+        flex-shrink: 0;
     }
 }
 .menu {
